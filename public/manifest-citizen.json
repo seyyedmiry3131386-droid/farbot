@@ -1,0 +1,28 @@
+{
+  "id": "/",
+  "name": "سامانه ثبت گزارش راوی — فراجا",
+  "short_name": "راوی فراجا",
+  "description": "سامانه ثبت گزارش‌های مردمی و گفتگوی هوشمند صوتی سازمان رزم سوم فراجا",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "dir": "rtl",
+  "lang": "fa-IR",
+  "background_color": "#f6f8f7",
+  "theme_color": "#244b3b",
+  "icons": [
+    {
+      "src": "/assets/faraja.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/faraja.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}

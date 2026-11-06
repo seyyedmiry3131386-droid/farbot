@@ -1,0 +1,321 @@
+@font-face {
+  font-family: 'Vazir';
+  src: url('/assets/Vazir.ttf') format('truetype');
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green: #244b3b;
+  --green-dark: #18372b;
+  --green-soft: #edf5f0;
+  --bg: #f6f8f7;
+  --text: #17221d;
+  --muted: #6b756f;
+  --border: #dbe5df;
+  --shadow: 0 8px 30px rgba(23, 43, 32, 0.05);
+}
+
+.dark {
+  --green: #347d61;
+  --green-dark: #459a79;
+  --green-soft: #162920;
+  --bg: #0e1612;
+  --text: #e7eee9;
+  --muted: #8d9e94;
+  --border: #22372c;
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Vazir', Tahoma, Arial, sans-serif;
+  direction: rtl;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dark .bg-white {
+  background-color: #15221b !important;
+  color: #e7eee9 !important;
+}
+
+.dark .bg-\[\#f6f8f7\] {
+  background-color: #0e1612 !important;
+}
+
+.dark .bg-\[\#fcfdfa\] {
+  background-color: #121d17 !important;
+  color: #e7eee9 !important;
+}
+
+.dark .bg-\[\#f8fbf9\] {
+  background-color: #121e17 !important;
+}
+
+.dark .bg-\[\#edf5f0\] {
+  background-color: #1a2f24 !important;
+  color: #c9e2d5 !important;
+}
+
+.dark .bg-\[\#f0f6f2\] {
+  background-color: #162b20 !important;
+}
+
+/* Gradients in dark mode */
+.dark .from-white {
+  --tw-gradient-from: #15231c var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: #15231c var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+.dark .via-\[\#f4f9f6\] {
+  --tw-gradient-to: #1c3227 var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #1c3227 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+.dark .to-white {
+  --tw-gradient-to: #15231c var(--tw-gradient-to-position) !important;
+}
+
+/* Focus mode element in dark mode */
+.dark div#root > div > main > div > div:first-of-type {
+  background: linear-gradient(to right, #15231c, #1c3227, #15231c) !important;
+  border-color: #22372c !important;
+}
+.dark div#root > div > main > div > div:first-of-type p {
+  color: #c4ded0 !important;
+}
+
+.dark .border-\[\#e1e9e4\],
+.dark .border-\[\#e5ece8\],
+.dark .border-\[\#dbe5df\],
+.dark .border-\[\#d9e3dd\],
+.dark .border-\[\#dfe9e3\],
+.dark .border-\[\#e4ebe7\] {
+  border-color: #22372c !important;
+}
+
+.dark .text-\[\#18372b\],
+.dark .text-\[\#17221d\] {
+  color: #e7eee9 !important;
+}
+
+.dark .text-\[\#31493e\] {
+  color: #c5d6cc !important;
+}
+
+.dark .text-\[\#6b756f\],
+.dark .text-\[\#606b65\] {
+  color: #90a196 !important;
+}
+
+.dark .text-gray-700,
+.dark .text-gray-800,
+.dark .text-gray-900 {
+  color: #dce7e1 !important;
+}
+
+.dark .text-gray-500,
+.dark .text-gray-600 {
+  color: #92a397 !important;
+}
+
+.dark .bg-gray-50 {
+  background-color: #121d17 !important;
+}
+
+.dark .bg-gray-100 {
+  background-color: #182820 !important;
+}
+
+.dark .border-gray-100,
+.dark .border-gray-200,
+.dark .border-gray-300 {
+  border-color: #24392f !important;
+}
+
+.dark select,
+.dark input[type="text"],
+.dark input[type="tel"],
+.dark textarea {
+  background-color: #121d17 !important;
+  color: #e7eee9 !important;
+  border-color: #24392f !important;
+}
+
+/* Iranian License Plate */
+.iran-plate {
+  --plate-bg: #fff;
+  --plate-fg: #151a16;
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  direction: ltr;
+  background: var(--plate-bg);
+  color: var(--plate-fg);
+  border: 2px solid #263629;
+  border-radius: 7px;
+  padding: 5px;
+  max-width: 390px;
+  width: 100%;
+  margin: 14px auto 8px;
+  box-shadow: 0 3px 0 #18341f17;
+  min-height: 72px;
+  overflow: hidden;
+}
+
+.plate-band {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 27px;
+  background: #183c85;
+  color: white;
+  padding: 5px 3px;
+  border-radius: 2px;
+  font: 8px/1.3 Arial, sans-serif;
+}
+.plate-band b {
+  font-weight: 600;
+}
+.plate-flag {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  height: 12px;
+  border: 1px solid #dbe5ef;
+}
+.plate-flag i {
+  flex: 1;
+  background: #fff;
+}
+.plate-flag i:first-child {
+  background: #168640;
+}
+.plate-flag i:last-child {
+  background: #e13236;
+}
+
+.plate-slot {
+  display: block;
+  background: transparent;
+  color: inherit;
+  border: 0;
+  border-bottom: 1px dashed #48523f66;
+  min-width: 0;
+  width: 100%;
+  text-align: center;
+  padding: 5px 1px;
+  font: 22px/1.8 'Vazir', Arial, sans-serif;
+  border-radius: 3px;
+  flex: 1;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+.plate-slot::placeholder {
+  color: currentColor;
+  opacity: 0.35;
+}
+.plate-slot:focus {
+  outline: 2px solid #819861;
+  outline-offset: -2px;
+  background: #ffffff30;
+}
+
+.plate-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  min-width: 38px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.plate-letter {
+  max-width: 58px;
+}
+
+.plate-region {
+  display: flex;
+  flex: 0 0 55px;
+  flex-direction: column;
+  border-left: 2px solid currentColor;
+  margin-left: 2px;
+  padding-left: 4px;
+  min-width: 0;
+}
+.plate-region small {
+  font-size: 11px;
+  line-height: 1.3;
+  text-align: center;
+  padding-top: 3px;
+}
+.plate-region .plate-slot {
+  font-size: 20px;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.tone-yellow {
+  --plate-bg: #f5cc42;
+}
+.tone-green {
+  --plate-bg: #116345;
+  --plate-fg: #fff;
+}
+.tone-red {
+  --plate-bg: #be302c;
+  --plate-fg: #fff;
+}
+.tone-blue {
+  --plate-bg: #72b9e4;
+  --plate-fg: #142227;
+}
+.tone-khaki {
+  --plate-bg: #d4c29a;
+}
+.tone-brown {
+  --plate-bg: #775b43;
+  --plate-fg: #fff;
+}
+
+.layout-motorcycle {
+  max-width: 218px;
+  min-height: 120px;
+}
+.plate-motor-rows {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+.plate-motor-rows .plate-slot {
+  font-size: 24px;
+}
+
+/* Animations */
+@keyframes arrive {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-arrive {
+  animation: arrive 0.25s ease-out;
+}

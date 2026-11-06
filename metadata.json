@@ -1,0 +1,8 @@
+{
+  "name": "راوی — دستیار ثبت گزارش",
+  "description": "دستیار فارسی ثبت گزارش با موتور هوشمند تحلیل موقعیت، هدایت گام‌به‌گام، استخراج اطلاعات و مرور مستندات.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "/admin",
+  "name": "سامانه پایش و مدیریت گزارشات فراجا",
+  "short_name": "مدیریت فراجا",
+  "description": "پنل مدیریت، کارتابل پایش متمرکز و ارزیابی عملکرد گزارشات فراجا",
+  "start_url": "/admin",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "dir": "rtl",
+  "lang": "fa-IR",
+  "background_color": "#f4f7f5",
+  "theme_color": "#18372b",
+  "icons": [
+    {
+      "src": "/assets/faraja.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/faraja.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}
